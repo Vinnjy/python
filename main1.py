@@ -120,3 +120,12 @@ print(df_recipes_1)
 print(f"\nЗадание 1.7")
 filter_dataframe_recipes = dataframe_recipes[(dataframe_recipes['minutes'] < 20) & (dataframe_recipes['n_ingredients'] < 5)]
 print(f"Информацию о рецептах, время выполнения которых не больше 20 минут и кол-во ингредиентов в которых не больше 5: {filter_dataframe_recipes}")
+
+# Задание 2
+print(f"\nЗадание 2.1")
+dataframe_recipes['submitted'] = pd.to_datetime(dataframe_recipes['submitted'], format = '%Y-%m-%d')
+print(f"Форматирование типа \n{dataframe_recipes.dtypes}")
+print(f"\nЗадание 2.2")
+dataframe_recipes['year'] = dataframe_recipes['submitted'].dt.year
+filter_dataframe_recipes_2 = dataframe_recipes[dataframe_recipes['year']>2010]
+print(f">2010\n{filter_dataframe_recipes_2}")
