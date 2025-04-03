@@ -251,3 +251,20 @@ merged['year'] = pd.to_datetime(merged['submitted']).dt.year
 avg_rating_yearly = merged.groupby('year')['rating'].mean()
 m = avg_rating_yearly.idxmin()
 print(m)
+
+
+
+
+
+
+
+
+
+# Задание 6
+# Сохранение таблиц pd.DataFrame
+# Задание 6.1
+print(f"\nЗадание 6")
+print(f"\nЗадание 6.1")
+print("Отсортируйте таблицу в порядке убывания величины столбца name_word_count и сохраните результаты выполнения заданий 3.1-3.3 в csv файл\n")
+sorted_recipes = df_recipes.sort_values('name_word_count', ascending=False) # asceding = порядок сортировки
+sorted_recipes.to_csv('recipe_sample_new.csv', index = False)
