@@ -151,15 +151,3 @@ with open('job_people.pickle', 'rb') as file23:
     loaded = pickle.load(file23)
 assert job_people == loaded, "Не совпали"
 print("Данные загружены и идентичны")
-
-
-
-
-
-
-
-
-# Задание 3
-# XML
-# Задание 3.1
-print("По данным файла steps_sample.xml сформируйте словарь с шагами по каждому рецепту вида {id_рецепта: [шаг1, шаг2]}. Сохраните этот словарь в файл steps_sample.json")
