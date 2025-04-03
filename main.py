@@ -1,5 +1,5 @@
 import pandas as pd
-
+import openpyxl
 # Задание 1
 print("Разминка")
 print(f"\nЗадание 1\nЗагрузите данные из файла sp500hst.txt и обозначьте столбцы в соответствии с содержимым: date, ticker, open, high, .., close, volume")
@@ -268,3 +268,11 @@ print(f"\nЗадание 6.1")
 print("Отсортируйте таблицу в порядке убывания величины столбца name_word_count и сохраните результаты выполнения заданий 3.1-3.3 в csv файл\n")
 sorted_recipes = df_recipes.sort_values('name_word_count', ascending=False) # asceding = порядок сортировки
 sorted_recipes.to_csv('recipe_sample_new.csv', index = False)
+
+
+# Задание 6.2
+print(f"\nЗадание 6.2")
+print("Воспользовавшись pd.ExcelWriter, cохраните результаты 5.1 и 5.2 в файл: на лист с названием Рецепты с оценками сохраните результаты выполнения 5.1; на лист с названием Количество отзывов по рецептам сохраните результаты выполнения 5.2\n")
+with pd.ExcelWriter('excel.xlsx') as writer:
+    merged_5_1.to_excel(writer, sheet_name='Рецепты с оценками', index = False)
+    merged_5_2.to_excel(writer, sheet_name='Количестов отзывов по рецептам', index = False)
