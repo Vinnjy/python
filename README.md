@@ -16,7 +16,7 @@ import abc
    * Создавался класс Документ, который является интерфейсом для всех видов документа.
    * В нём прописаны 2 абстрактных метода для открытия и сохранения файла.
 ```
-class Document:
+class Document(abc.ABC):
     @abc.abstractmethod
     def open(self):
         pass
