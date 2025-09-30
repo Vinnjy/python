@@ -96,3 +96,7 @@ print("Запуск pdf фабрики для pdf документов")
 pdfDocumentFactory = PDFDocumentFactory()
 client_code(pdfDocumentFactory)
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8182b7bf-362a-4a9b-8958-c6aa27642093" />
+
+<img width="1088" height="249" alt="image" src="https://github.com/user-attachments/assets/9e363aa8-55a4-4edd-af62-0f4fa6dd4daf" />
+
