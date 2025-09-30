@@ -7,29 +7,11 @@ class Order(abc.ABC):
     @abc.abstractmethod
     def get_description(self) -> str:
         pass
-class DeliveryCostStrategy(abc.ABC):
-    @abc.abstractmethod
-    def calculate_cost(self, distance : int, weight : int):
-        pass
 class BasicOrder(Order):
-    def __init__(self):
-        self.strategy = None
-        self.distance = 0.0
-        self.weight = 0.0
     def get_total_cost(self) -> str:
         return 788778.78
     def get_description(self):
         return "покупка сервера"
-
-    def calculate_strategy_cost(self) -> float:
-        if self.strategy:
-            return self.strategy.calculate_cost(self.distance, self.weight)
-        return 0.0
-
-    def set_parameters(self, strategy : DeliveryCostStrategy, distance: float, weight: float):
-        self.strategy=strategy
-        self.distance = distance
-        self.weight = weight
 
 class OrderDiscountDecorator(Order, abc.ABC):
     def __init__(self, decorated_order: Order):
@@ -58,30 +40,48 @@ class FixedAmountDiscount(OrderDiscountDecorator):
 class LoyaltyDiscount(OrderDiscountDecorator):
     def get_total_cost(self) -> float:
         return self._decorated_order.get_total_cost() + self._decorated_order.get_total_cost()*0.15
-
     def get_description(self) -> str:
         return self._decorated_order.get_description() + ", применяем скидку для лояльных клиентов"
 
+class DeliveryCostStrategy(abc.ABC):
+    @abc.abstractmethod
+    def calculate_cost(self, distance : int, weight : int):
+        pass
+
 class StandardDelivery(DeliveryCostStrategy):
     def __init__(self):
-        self.standard = ". Стандартная: "
+        self.standard = "Стандартно: "
     def calculate_cost(self, distance : int, weight : int):
         print(f"{self.standard}{self.distance * self.weight}")
 
 
 class ExpressDelivery(DeliveryCostStrategy):
     def __init__(self):
-        self.express = ". Экспресс: "
-
+        self.express = "Экспресс: "
     def calculate_cost(self, distance : float, weight : float):
         print(f"{self.express}{self.distance * self.weight * 10}")
 
 class FreeDeliveryThreshold(DeliveryCostStrategy):
     def __init__(self):
-        self.free = ". Бесплатная: "
-
+        self.free = "Бесплатно: "
     def calculate_cost(self, distance : float, weight : float):
         print(f"{self.free}{0}")
+class OrderProcessor:
+    def __init__(self, basicOrder : BasicOrder):
+        self.basicOrder = basicOrder
+        self._strategy = None
+        self.distance = 0.0
+        self.weight = 0.0
+    def set_strategy(self, strategy: DeliveryCostStrategy, distance: float, weight: float):
+        self._strategy = strategy
+        self.distance = distance
+        self.weight = weight
+        print(f"Установлен способ получения: {strategy.__class__.__name__}")
+    def checkout(self):
+        if not self._strategy:
+            print("Ошибка: Способ получения не выбран.")
+            return
+        self._strategy.calculate_cost(self.distance, self.weight)
 
 
 server = BasicOrder()
@@ -96,11 +96,13 @@ print(f"Заказ: стоимость {server_with_percent_fixed_discount.get_t
 server_with_percent_fixed_loyal_discount = LoyaltyDiscount(FixedAmountDiscount(PercentageDiscount(BasicOrder())))
 print(f"Заказ: стоимость {server_with_percent_fixed_loyal_discount.get_total_cost()}, описание - {server_with_percent_fixed_loyal_discount.get_description()}")
 
-server.set_parameters(StandardDelivery(),100, 5)
-server.calculate_strategy_cost()
+orderServer = OrderProcessor(server)
+if orderServer.basicOrder.get_total_cost() > 100000.0:
+    orderServer.set_strategy(FreeDeliveryThreshold(),100, 5)
+    orderServer.checkout()
+else:
+    orderServer.set_strategy(StandardDelivery(), 100, 5)
+    orderServer.checkout()
 
-server.set_parameters( ExpressDelivery(), 100, 5)
-server.calculate_strategy_cost()
-
-server.set_parameters(FreeDeliveryThreshold(),100, 5)
-server.calculate_strategy_cost()
+    orderServer.set_strategy(ExpressDelivery(), 100, 5)
+    orderServer.checkout()
