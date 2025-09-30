@@ -1,6 +1,6 @@
 import abc
 
-class Document:
+class Document(abc.ABC):
     @abc.abstractmethod
     def open(self):
         pass
