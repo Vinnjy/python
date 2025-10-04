@@ -8,4 +8,4 @@
 
 + ### [Лабораторная работа по паттерну фабрика](https://github.com/Vinnjy/python/tree/factory)
 
-+ ### [Лабораторная работа по декоратоу и стратегии](https://github.com/Vinnjy/python/tree/decorator_strategy)
++ ### [Лабораторная работа по паттернам декоратор и стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
