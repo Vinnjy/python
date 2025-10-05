@@ -9,3 +9,5 @@
 + ### [Лабораторная работа по паттерну фабрика](https://github.com/Vinnjy/python/tree/factory)
 
 + ### [Лабораторная работа по паттернам декоратор и стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
+
++ ### [Tkinter - GUI](https://github.com/Vinnjy/python/tree/tkinter)
