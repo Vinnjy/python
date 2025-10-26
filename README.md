@@ -8,6 +8,8 @@
 
 * ### [JSON, pickle](https://github.com/Vinnjy/python/tree/json_pickle)
 
+* ### [Задачи с экзамена](https://github.com/Vinnjy/python/tree/batman)
+
 ### Паттерны:
 
 + ### [Фабрика](https://github.com/Vinnjy/python/tree/factory)
