@@ -1,11 +1,17 @@
 ## Лабораторные работы
 
+### Обработка данных:
+
 * ### [numpy](https://github.com/Vinnjy/python/tree/numpy)
 
 * ### [pandas](https://github.com/Vinnjy/python/tree/pandas)
 
 * ### [JSON, pickle](https://github.com/Vinnjy/python/tree/json_pickle)
 
+### Паттерны:
+
 + ### [Фабрика](https://github.com/Vinnjy/python/tree/factory)
 
 + ### [Декоратор и Стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
+
+### Интерактивные приложения:
