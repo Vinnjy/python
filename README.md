@@ -17,3 +17,7 @@
 + ### [Декоратор и Стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
 
 ### Интерактивные приложения:
+
+* ### [Калькулятор](https://github.com/Vinnjy/python/tree/tkinter/tkinter/calculate)
+
+* ### [Paint](https://github.com/Vinnjy/python/tree/canvas/canvas/paint) 
