@@ -8,4 +8,4 @@
 
 ## [Paint простой реализация](https://github.com/Vinnjy/python/tree/canvas/canvas/paint)
 
-  * ### [Отчёт лабороторной работы](https://github.com/Vinnjy/python/blob/canvas/canvas/paint/paint.md)
+  * ### [Инструкция, как его сделать](https://github.com/Vinnjy/python/blob/canvas/canvas/paint/paint.md)
