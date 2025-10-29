@@ -8,6 +8,8 @@
 
 * ### [JSON, pickle](https://github.com/Vinnjy/python/tree/json_pickle)
 
+* ### [Работа с файлами и директория](https://github.com/Vinnjy/python/tree/file_directory)
+
 * ### [Задачи с экзамена](https://github.com/Vinnjy/python/tree/batman)
 
 ### Паттерны:
