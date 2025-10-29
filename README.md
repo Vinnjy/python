@@ -6,7 +6,7 @@
 
 ### [Применение паттернов по данной теме](https://github.com/Vinnjy/python/tree/canvas/canvas/pattern_canvas)
 
-  * ### [Подробнее тут](https://github.com/Vinnjy/python/blob/canvas/canvas/pattern_canvas/pattern_canvas.md)
+  * ### [Подробное алгоритм разработки](https://github.com/Vinnjy/python/blob/canvas/canvas/pattern_canvas/pattern_canvas.md)
 
 ### [Paint простой реализация](https://github.com/Vinnjy/python/tree/canvas/canvas/paint)
 
