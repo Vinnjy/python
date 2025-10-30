@@ -8,9 +8,9 @@
 
 * ### [JSON, pickle](https://github.com/Vinnjy/python/tree/json_pickle)
 
-* ### [Работа с файлами и директория](https://github.com/Vinnjy/python/tree/file_directory)
-
 * ### [CSV, JSON ](https://github.com/Vinnjy/python/tree/6_csv_json)
+
+* ### [Работа с файлами и директория](https://github.com/Vinnjy/python/tree/file_directory)
 
 * ### [Задачи с экзамена](https://github.com/Vinnjy/python/tree/batman)
 
