@@ -10,6 +10,8 @@
 
 * ### [Работа с файлами и директория](https://github.com/Vinnjy/python/tree/file_directory)
 
+* ### [CSV, JSON ](https://github.com/Vinnjy/python/tree/6_csv_json)
+
 * ### [Задачи с экзамена](https://github.com/Vinnjy/python/tree/batman)
 
 ### Паттерны:
