@@ -1,0 +1,14 @@
+[
+    {
+        "date": "20230101",
+        "product_name": "Apple",
+        "quantity": "102",
+        "price_per_unit": "130"
+    },
+    {
+        "date": "20160302",
+        "product_name": "Strawberry",
+        "quantity": "100",
+        "price_per_unit": "1000"
+    }
+]

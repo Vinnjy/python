@@ -1,0 +1,11 @@
+[ 
+    { "name": "Laptop",
+        "category": "Electronic",
+        "stock": 10
+    },
+    {
+        "name": "Desk",
+        "category": "Furniture",
+        "stock": 5
+    }
+]

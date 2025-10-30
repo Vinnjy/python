@@ -1,0 +1,14 @@
+{
+    "name": "John Doe",
+    "age": 20,
+    "courses": [
+        "History",
+        "Math",
+        "Art"
+    ],
+    "address": {
+        "street": "123 Main St",
+        "city": "Washington",
+        "zip": "12345678"
+    }
+}
