@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<students>
+    <student id="1">
+        <id>1</id>
+        <name>Alex</name>
+        <major>programming</major>
+    </student>
+    <student id="2">
+        <id>2</id>
+        <name>Bob</name>
+        <major>Physics</major>
+    </student>
+    <student id="3">
+        <id>3</id>
+        <name>Cam</name>
+        <major>Mathematics</major>
+    </student>
+    <student id="4">
+        <id>4</id>
+        <name>John</name>
+        <major>History</major>
+    </student>
+    <student id="5">
+        <id>5</id>
+        <name>Jack</name>
+        <major>Philosophy</major>
+    </student>
+</students>

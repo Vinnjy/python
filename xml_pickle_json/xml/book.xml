@@ -1,0 +1,12 @@
+<library>
+    <book id="1">
+        <title>The lord of the Rings</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1954</year>
+    </book>
+    <book id="2">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+    </book>
+</library>
