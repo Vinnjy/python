@@ -6,9 +6,9 @@
 
 * ### [pandas](https://github.com/Vinnjy/python/tree/pandas)
 
-* ### [JSON, pickle](https://github.com/Vinnjy/python/tree/json_pickle)
-
 * ### [CSV, JSON ](https://github.com/Vinnjy/python/tree/6_csv_json)
+
+* ### [JSON, pickle, XML](https://github.com/Vinnjy/python/tree/7_xml_pickle_json)
 
 * ### [Работа с файлами и директория](https://github.com/Vinnjy/python/tree/file_directory)
 
@@ -24,4 +24,4 @@
 
 * ### [Калькулятор](https://github.com/Vinnjy/python/tree/tkinter/tkinter/calculate)
 
-* ### [Paint](https://github.com/Vinnjy/python/tree/canvas/canvas/paint) 
+* ### [Paint](https://github.com/Vinnjy/python/tree/canvas/canvas/paint)
