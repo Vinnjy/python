@@ -14,6 +14,10 @@
 
 * ### [Задачи с экзамена](https://github.com/Vinnjy/python/tree/batman)
 
+### SQL:
+
+* ### [SQLite](https://github.com/Vinnjy/python/tree/8_sqlite)
+
 ### Паттерны:
 
 + ### [Фабрика](https://github.com/Vinnjy/python/tree/factory)
