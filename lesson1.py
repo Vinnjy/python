@@ -4,7 +4,8 @@ import numpy as np
 #####################################################################################################################################
 print("Задание 1")
 with open("minutes_n_ingredients.csv") as file_name:
-    array = np.genfromtxt(file_name, delimiter=",", dtype = None, names = True) # dtype = втоматически определить тип данных # delimiter = указывает на разделитель в файле # names = True = позволяет использовать 1-ую строку, как  имена столбцов.
+    # dtype = втоматически определить тип данных # delimiter = указывает на разделитель в файле # names = True = позволяет использовать 1-ую строку, как  имена столбцов.
+    array = np.genfromtxt(file_name, delimiter=",", dtype = None, names = True) 
 
 print(f"Строка 1: {array[0]}, Строка 2: {array[1]}, Строка 3: {array[2]}, Строка 4: {array[3]}, Строка 5: {array[4]} \n")
 
@@ -104,7 +105,7 @@ with open('minutes_n_ingredients.csv', 'r', encoding='utf-8') as file_name:
     headers = file_name.readline().strip()
 
 nums_rows = arr.shape[0] # возвращает количество строк в датасете
-random_indicies = np.random.choice(nums_rows, size=10,replace=False) # 10 уникальных индексов # replace=False = гарантирует, что не повторяются
+random_indicies = np.random.choice(nums_rows, size=10,replace=False) # 10 уникальных индексов; replace=False = не повторяться
 random_rows = arr[random_indicies] # выбор строк по случайным индексам
 print(random_rows)
 
@@ -172,13 +173,5 @@ short = short[:min_recipes] # огр. количество рецептов до
 middle = middle[:min_recipes]
 long = long[:min_recipes]
 
-result_massive = np.array([short, middle, long]) # создаём 3-мерный массив (Ось 1 - группы; Ось 2 - рецепты; Ось 3 - характеристики рецепта (длятельность, количество и т д))
+result_massive = np.array([short, middle, long]) # создаём 3-мерный массив (Ось 1 - группы; 2 - рецепты; 3 - характеристики рецепта
 print("Форма 3-мерного массива: ", result_massive.shape)
-
-
-
-
-
-
-
-
