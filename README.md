@@ -18,14 +18,14 @@
 
 * ### [SQLite](https://github.com/Vinnjy/python/tree/8_sqlite)
 
-### Паттерны:
-
-+ ### [Фабрика](https://github.com/Vinnjy/python/tree/factory)
-
-+ ### [Декоратор и Стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
-
 ### Интерактивные приложения:
 
 * ### [Калькулятор](https://github.com/Vinnjy/python/tree/tkinter/tkinter/calculate)
 
 * ### [Paint](https://github.com/Vinnjy/python/tree/canvas/canvas/paint)
+
+### Паттерны:
+
++ ### [Фабрика](https://github.com/Vinnjy/python/tree/factory)
+
++ ### [Декоратор и Стратегия](https://github.com/Vinnjy/python/tree/decorator_strategy)
